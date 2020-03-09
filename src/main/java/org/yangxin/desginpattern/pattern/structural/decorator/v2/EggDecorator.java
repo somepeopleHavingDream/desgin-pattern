@@ -6,7 +6,7 @@ package org.yangxin.desginpattern.pattern.structural.decorator.v2;
  */
 public class EggDecorator extends AbstractDecorator {
 
-    public EggDecorator(AbstractBatterCake abstractBatterCake) {
+    EggDecorator(AbstractBatterCake abstractBatterCake) {
         super(abstractBatterCake);
     }
 

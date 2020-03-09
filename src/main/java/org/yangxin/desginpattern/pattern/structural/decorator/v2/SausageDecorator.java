@@ -6,7 +6,7 @@ package org.yangxin.desginpattern.pattern.structural.decorator.v2;
  */
 public class SausageDecorator extends AbstractDecorator {
 
-    public SausageDecorator(AbstractBatterCake abstractBatterCake) {
+    SausageDecorator(AbstractBatterCake abstractBatterCake) {
         super(abstractBatterCake);
     }
 
