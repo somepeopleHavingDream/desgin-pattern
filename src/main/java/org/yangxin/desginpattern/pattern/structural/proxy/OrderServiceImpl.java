@@ -8,9 +8,9 @@ public class OrderServiceImpl implements IOrderService {
     private IOrderDAO iOrderDAO = new OrderDAOImpl();
 
     @Override
-    public int saveOrder(Order order) {
+    public void saveOrder(Order order) {
         // Spring会自己注入，这里就直接new了
         System.out.println("Service层调用DAO层添加Order");
-        return iOrderDAO.insert(order);
+        iOrderDAO.insert(order);
     }
 }
