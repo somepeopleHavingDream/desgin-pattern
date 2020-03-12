@@ -1,6 +1,7 @@
 package org.yangxin.desginpattern.pattern.creational;
 
-import java.io.*;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 
 /**
  * @author yangxin
@@ -8,7 +9,7 @@ import java.io.*;
  */
 public class Test {
 
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
+    public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
 //        LazySingleton lazySingleton = LazySingleton.getInstance();
 //        Thread t1 = new Thread(new T());
 //        Thread t2 = new Thread(new T());
@@ -17,13 +18,22 @@ public class Test {
 //
 //        System.out.println("program end");
 
-        HungrySingleton instance = HungrySingleton.getInstance();
-        ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("singleton_file"));
-        objectOutputStream.writeObject(instance);
+//        HungrySingleton instance = HungrySingleton.getInstance();
+//        ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("singleton_file"));
+//        objectOutputStream.writeObject(instance);
+//
+//        File file = new File("singleton_file");
+//        ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(file));
+//        HungrySingleton newInstance = (HungrySingleton) objectInputStream.readObject();
+//
+//        System.out.println(instance);
+//        System.out.println(newInstance);
 
-        File file = new File("singleton_file");
-        ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(file));
-        HungrySingleton newInstance = (HungrySingleton) objectInputStream.readObject();
+        Class objectClass = HungrySingleton.class;
+        Constructor constructor = objectClass.getDeclaredConstructor();
+        constructor.setAccessible(true);
+        HungrySingleton instance = HungrySingleton.getInstance();
+        HungrySingleton newInstance = (HungrySingleton) constructor.newInstance();
 
         System.out.println(instance);
         System.out.println(newInstance);
