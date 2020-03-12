@@ -1,4 +1,4 @@
-package org.yangxin.desginpattern.pattern.creational;
+package org.yangxin.desginpattern.pattern.creational.singleton;
 
 /**
  * @author yangxin
