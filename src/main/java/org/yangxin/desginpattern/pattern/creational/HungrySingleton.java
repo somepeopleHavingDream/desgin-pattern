@@ -1,6 +1,8 @@
 package org.yangxin.desginpattern.pattern.creational;
 
-class HungrySingleton {
+import java.io.Serializable;
+
+class HungrySingleton implements Serializable {
 
     private final static HungrySingleton hungrySingleton;
 
@@ -12,7 +14,11 @@ class HungrySingleton {
 
     }
 
-    public static HungrySingleton getInstance() {
+    static HungrySingleton getInstance() {
+        return hungrySingleton;
+    }
+
+    private Object readResolve() {
         return hungrySingleton;
     }
 }
