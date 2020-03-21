@@ -7,6 +7,7 @@ package org.yangxin.desginpattern.pattern.structural.adapter;
 public class Test {
 
     public static void main(String[] args) {
+        // dc是直流电，ac是交流电
         DC5 dc5 = new PowerAdapter();
         System.out.println(dc5.outputDC5V());
     }
