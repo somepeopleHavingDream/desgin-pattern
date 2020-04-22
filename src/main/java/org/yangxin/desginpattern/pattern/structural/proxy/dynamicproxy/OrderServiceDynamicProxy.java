@@ -16,6 +16,7 @@ import java.lang.reflect.Proxy;
 @AllArgsConstructor
 @NoArgsConstructor
 public class OrderServiceDynamicProxy implements InvocationHandler {
+
     private Object target;
 
     Object bind() {

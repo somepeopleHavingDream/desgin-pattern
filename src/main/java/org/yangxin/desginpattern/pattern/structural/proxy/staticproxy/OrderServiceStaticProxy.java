@@ -10,7 +10,8 @@ import org.yangxin.desginpattern.pattern.structural.proxy.db.DataSourceContextHo
  * 2020/03/07 21:26
  */
 class OrderServiceStaticProxy {
-    private IOrderService iOrderService = new OrderServiceImpl();
+
+    private final IOrderService iOrderService = new OrderServiceImpl();
 
     void saveOrder(Order order) {
         beforeMethod(order);

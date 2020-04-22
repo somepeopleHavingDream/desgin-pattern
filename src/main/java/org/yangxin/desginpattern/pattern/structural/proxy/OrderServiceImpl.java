@@ -5,7 +5,8 @@ package org.yangxin.desginpattern.pattern.structural.proxy;
  * 2020/03/07 21:23
  */
 public class OrderServiceImpl implements IOrderService {
-    private IOrderDAO iOrderDAO = new OrderDAOImpl();
+
+    private final IOrderDAO iOrderDAO = new OrderDAOImpl();
 
     @Override
     public void saveOrder(Order order) {

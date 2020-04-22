@@ -9,6 +9,7 @@ import org.yangxin.desginpattern.pattern.structural.proxy.OrderServiceImpl;
  * 2020/03/07 21:47
  */
 public class Test {
+
     public static void main(String[] args) {
         Order order = new Order();
         order.setUserId(1);
