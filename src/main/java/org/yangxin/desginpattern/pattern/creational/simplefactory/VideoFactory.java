@@ -18,7 +18,7 @@ public class VideoFactory {
 //        }
 //    }
 
-    public Video getVideo(Class clazz) {
+    public Video getVideo(Class<?> clazz) {
         Video video = null;
         try {
             video = (Video) Class.forName(clazz.getName()).getDeclaredConstructor().newInstance();
