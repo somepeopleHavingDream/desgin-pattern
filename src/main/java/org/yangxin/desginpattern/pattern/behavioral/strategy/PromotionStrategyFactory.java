@@ -9,7 +9,7 @@ import java.util.Map;
  */
 public class PromotionStrategyFactory {
 
-    private static Map<String, PromotionStrategy> PROMOTION_STRATEGY_MAP = new HashMap<>();
+    private static final Map<String, PromotionStrategy> PROMOTION_STRATEGY_MAP = new HashMap<>();
 
     private static final PromotionStrategy NON_PROMOTION = new EmptyPromotionStrategy();
 
