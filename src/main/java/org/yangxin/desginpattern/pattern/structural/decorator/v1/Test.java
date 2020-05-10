@@ -5,6 +5,7 @@ package org.yangxin.desginpattern.pattern.structural.decorator.v1;
  * 2020/03/09 20:53
  */
 public class Test {
+
     public static void main(String[] args) {
         BatterCake batterCake = new BatterCake();
         System.out.println(batterCake.getDescription() + " " + batterCake.cost());

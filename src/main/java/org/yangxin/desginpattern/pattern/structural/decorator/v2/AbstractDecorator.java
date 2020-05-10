@@ -5,6 +5,7 @@ package org.yangxin.desginpattern.pattern.structural.decorator.v2;
  * 2020/03/09 21:00
  */
 public class AbstractDecorator extends AbstractBatterCake {
+
     private final AbstractBatterCake abstractBatterCake;
 
     AbstractDecorator(AbstractBatterCake abstractBatterCake) {
