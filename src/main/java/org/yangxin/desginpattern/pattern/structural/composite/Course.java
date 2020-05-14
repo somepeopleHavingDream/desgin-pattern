@@ -5,6 +5,8 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
+ * 课程
+ *
  * @author yangxin
  * 2020/03/23 20:50
  */
