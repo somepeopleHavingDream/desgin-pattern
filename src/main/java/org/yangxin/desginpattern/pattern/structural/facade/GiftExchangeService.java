@@ -6,9 +6,9 @@ package org.yangxin.desginpattern.pattern.structural.facade;
  */
 class GiftExchangeService {
 
-    private QualifyService qualifyService = new QualifyService();
-    private PointsPaymentService pointsPaymentService = new PointsPaymentService();
-    private ShippingService shippingService = new ShippingService();
+    private final QualifyService qualifyService = new QualifyService();
+    private final PointsPaymentService pointsPaymentService = new PointsPaymentService();
+    private final ShippingService shippingService = new ShippingService();
 
     void giftExchange(PointsGift pointsGift) {
         // 资格校验
