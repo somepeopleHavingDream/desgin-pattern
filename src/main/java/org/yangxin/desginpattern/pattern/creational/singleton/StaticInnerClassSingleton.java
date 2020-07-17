@@ -8,7 +8,8 @@ class StaticInnerClassSingleton {
 
     private static class InnerClass {
 
-        private static StaticInnerClassSingleton staticInnerClassSingleton = new StaticInnerClassSingleton();
+        @SuppressWarnings("InstantiationOfUtilityClass")
+        private static final StaticInnerClassSingleton staticInnerClassSingleton = new StaticInnerClassSingleton();
     }
 
     public static StaticInnerClassSingleton getInstance() {
