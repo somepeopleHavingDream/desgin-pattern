@@ -21,13 +21,14 @@ public class OrderServiceDynamicProxy implements InvocationHandler {
 
     Object bind() {
         Class<?> aClass = target.getClass();
+        // 这里会代理target类的所有方法
         return Proxy.newProxyInstance(aClass.getClassLoader(), aClass.getInterfaces(), this);
     }
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        Object argObject = args[0];
-        beforeMethod(argObject);
+//        Object argObject = args[0];
+//        beforeMethod(argObject);
         Object invoke = method.invoke(target, args);
         afterMethod();
 

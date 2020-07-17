@@ -15,6 +15,7 @@ public class Test {
         order.setUserId(1);
 
         IOrderService iOrderService = (IOrderService) new OrderServiceDynamicProxy(new OrderServiceImpl()).bind();
-        iOrderService.saveOrder(order);
+//        iOrderService.saveOrder(order);
+        iOrderService.otherMethod();
     }
 }

@@ -14,4 +14,9 @@ public class OrderServiceImpl implements IOrderService {
         System.out.println("Service层调用DAO层添加Order");
         iOrderDAO.insert(order);
     }
+
+    @Override
+    public void otherMethod() {
+        System.out.println("otherMethod");
+    }
 }
