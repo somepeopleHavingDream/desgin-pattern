@@ -12,6 +12,7 @@ class LazySingleton {
 
     }
 
+    @SuppressWarnings("InstantiationOfUtilityClass")
     synchronized static LazySingleton getInstance() {
         if (lazySingleton == null) {
             lazySingleton = new LazySingleton();
