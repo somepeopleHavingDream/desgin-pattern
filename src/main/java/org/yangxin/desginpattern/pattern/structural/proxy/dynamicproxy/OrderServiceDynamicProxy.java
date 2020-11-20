@@ -8,8 +8,11 @@ import org.yangxin.desginpattern.pattern.structural.proxy.db.DataSourceContextHo
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.Arrays;
 
 /**
+ * 订单服务动态代理
+ *
  * @author yangxin
  * 2020/03/07 22:00
  */
@@ -21,6 +24,8 @@ public class OrderServiceDynamicProxy implements InvocationHandler {
 
     Object bind() {
         Class<?> aClass = target.getClass();
+        System.out.println("aClass.getClassLoader: " + aClass.getClassLoader());
+        System.out.println("aClass.getInterfaces: " + Arrays.toString(aClass.getInterfaces()));
         // 这里会代理target类的所有方法
         return Proxy.newProxyInstance(aClass.getClassLoader(), aClass.getInterfaces(), this);
     }

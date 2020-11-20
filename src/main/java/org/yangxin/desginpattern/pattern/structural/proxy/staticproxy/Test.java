@@ -3,6 +3,8 @@ package org.yangxin.desginpattern.pattern.structural.proxy.staticproxy;
 import org.yangxin.desginpattern.pattern.structural.proxy.Order;
 
 /**
+ * 静态代理测试
+ *
  * @author yangxin
  * 2020/03/07 21:47
  */

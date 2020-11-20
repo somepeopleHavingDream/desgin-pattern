@@ -5,6 +5,8 @@ import org.yangxin.desginpattern.pattern.structural.proxy.Order;
 import org.yangxin.desginpattern.pattern.structural.proxy.OrderServiceImpl;
 
 /**
+ * 动态代理测试
+ *
  * @author yangxin
  * 2020/03/07 21:47
  */
