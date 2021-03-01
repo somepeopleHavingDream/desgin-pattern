@@ -10,6 +10,7 @@ import org.yangxin.desginpattern.pattern.structural.proxy.OrderServiceImpl;
  * @author yangxin
  * 2020/03/07 21:47
  */
+@SuppressWarnings("AlibabaRemoveCommentedCode")
 public class Test {
 
     public static void main(String[] args) {
