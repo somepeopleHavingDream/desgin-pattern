@@ -6,5 +6,8 @@ package org.yangxin.desginpattern.pattern.behavioral.strategy;
  */
 public interface PromotionStrategy {
 
+    /**
+     * 执行促销
+     */
     void doPromotion();
 }

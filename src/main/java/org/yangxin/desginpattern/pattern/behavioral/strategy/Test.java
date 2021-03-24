@@ -4,6 +4,7 @@ package org.yangxin.desginpattern.pattern.behavioral.strategy;
  * @author yangxin
  * 2020/03/24 21:21
  */
+@SuppressWarnings("CommentedOutCode")
 public class Test {
 
 //    public static void main(String[] args) {
