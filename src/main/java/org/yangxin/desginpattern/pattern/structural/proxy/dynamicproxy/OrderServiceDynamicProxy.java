@@ -16,6 +16,7 @@ import java.util.Arrays;
  * @author yangxin
  * 2020/03/07 22:00
  */
+@SuppressWarnings("CommentedOutCode")
 @AllArgsConstructor
 @NoArgsConstructor
 public class OrderServiceDynamicProxy implements InvocationHandler {
