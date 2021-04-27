@@ -11,17 +11,17 @@ import java.util.Map;
  */
 public class ContainerSingleton {
 
-    private static final Map<String, Object> singletonMap = new HashMap<>();
+    private static final Map<String, Object> SINGLETON_MAP = new HashMap<>();
 
     public static void putInstance(String key, Object instance) {
         if (!StringUtils.isEmpty(key) && instance != null) {
-            if (!singletonMap.containsKey(key)) {
-                singletonMap.put(key, instance);
+            if (!SINGLETON_MAP.containsKey(key)) {
+                SINGLETON_MAP.put(key, instance);
             }
         }
     }
 
     public static Object getInstance(String key) {
-        return singletonMap.get(key);
+        return SINGLETON_MAP.get(key);
     }
 }

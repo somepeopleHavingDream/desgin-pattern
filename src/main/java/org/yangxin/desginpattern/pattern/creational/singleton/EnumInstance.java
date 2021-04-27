@@ -6,6 +6,9 @@ package org.yangxin.desginpattern.pattern.creational.singleton;
  */
 public enum EnumInstance {
 
+    /**
+     * 单例实例
+     */
     INSTANCE;
 
     private Object data;

@@ -6,12 +6,12 @@ package org.yangxin.desginpattern.pattern.creational.singleton;
  */
 public class ThreadLocalInstance {
 
-    private static final ThreadLocal<ThreadLocalInstance> threadLocalInstanceThreadLocal
+    private static final ThreadLocal<ThreadLocalInstance> THREAD_LOCAL_INSTANCE_THREAD_LOCAL
             = ThreadLocal.withInitial(ThreadLocalInstance::new);
 
     private ThreadLocalInstance() {}
 
     public static ThreadLocalInstance getInstance() {
-        return threadLocalInstanceThreadLocal.get();
+        return THREAD_LOCAL_INSTANCE_THREAD_LOCAL.get();
     }
 }

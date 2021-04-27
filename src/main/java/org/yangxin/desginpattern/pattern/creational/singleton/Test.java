@@ -9,15 +9,6 @@ import java.io.*;
 public class Test {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-//        LazySingleton lazySingleton = LazySingleton.getInstance();
-//        Thread t1 = new Thread(new T());
-//        Thread t2 = new Thread(new T());
-//        t1.start();
-//        t2.start();
-//
-//        System.out.println("program end");
-
-//        HungrySingleton instance = HungrySingleton.getInstance();
         EnumInstance instance = EnumInstance.getInstance();
         instance.setData(new Object());
 
@@ -32,14 +23,5 @@ public class Test {
         System.out.println(instance.getData());
         System.out.println(newInstance.getData());
         System.out.println(instance.getData() == newInstance.getData());
-
-//        Class objectClass = HungrySingleton.class;
-//        Constructor constructor = objectClass.getDeclaredConstructor();
-//        constructor.setAccessible(true);
-//        HungrySingleton instance = HungrySingleton.getInstance();
-//        HungrySingleton newInstance = (HungrySingleton) constructor.newInstance();
-//
-//        System.out.println(instance);
-//        System.out.println(newInstance);
     }
 }

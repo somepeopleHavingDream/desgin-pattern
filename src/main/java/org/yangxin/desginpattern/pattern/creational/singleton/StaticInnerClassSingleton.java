@@ -9,10 +9,10 @@ class StaticInnerClassSingleton {
     private static class InnerClass {
 
         @SuppressWarnings("InstantiationOfUtilityClass")
-        private static final StaticInnerClassSingleton staticInnerClassSingleton = new StaticInnerClassSingleton();
+        private static final StaticInnerClassSingleton STATIC_INNER_CLASS_SINGLETON = new StaticInnerClassSingleton();
     }
 
     public static StaticInnerClassSingleton getInstance() {
-        return InnerClass.staticInnerClassSingleton;
+        return InnerClass.STATIC_INNER_CLASS_SINGLETON;
     }
 }
