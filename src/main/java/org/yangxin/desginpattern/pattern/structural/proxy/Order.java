@@ -12,5 +12,6 @@ import lombok.Data;
 public class Order {
 
     private Object orderInfo;
+
     private Integer userId;
 }
