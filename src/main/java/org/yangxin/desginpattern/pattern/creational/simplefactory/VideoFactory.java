@@ -6,6 +6,7 @@ import java.lang.reflect.InvocationTargetException;
  * @author yangxin
  * 2020/03/16 20:43
  */
+@SuppressWarnings({"CommentedOutCode", "AlibabaRemoveCommentedCode"})
 public class VideoFactory {
 
 //    public Video getVideo(String type) {
@@ -18,10 +19,10 @@ public class VideoFactory {
 //        }
 //    }
 
-    public Video getVideo(Class<?> clazz) {
-        Video video = null;
+    public AbstractVideo getVideo(Class<?> clazz) {
+        AbstractVideo video = null;
         try {
-            video = (Video) Class.forName(clazz.getName()).getDeclaredConstructor().newInstance();
+            video = (AbstractVideo) Class.forName(clazz.getName()).getDeclaredConstructor().newInstance();
         } catch (InstantiationException | IllegalAccessException | ClassNotFoundException | NoSuchMethodException | InvocationTargetException e) {
             e.printStackTrace();
         }

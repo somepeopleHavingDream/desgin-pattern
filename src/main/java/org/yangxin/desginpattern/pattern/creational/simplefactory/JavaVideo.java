@@ -4,7 +4,7 @@ package org.yangxin.desginpattern.pattern.creational.simplefactory;
  * @author yangxin
  * 2020/03/16 20:38
  */
-public class JavaVideo extends Video {
+public class JavaVideo extends AbstractVideo {
 
     @Override
     public void produce() {

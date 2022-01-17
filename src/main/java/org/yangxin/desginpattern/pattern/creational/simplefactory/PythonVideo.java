@@ -4,7 +4,7 @@ package org.yangxin.desginpattern.pattern.creational.simplefactory;
  * @author yangxin
  * 2020/03/16 20:39
  */
-public class PythonVideo extends Video {
+public class PythonVideo extends AbstractVideo {
 
     @Override
     public void produce() {
