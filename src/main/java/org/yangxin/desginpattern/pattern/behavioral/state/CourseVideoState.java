@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 public abstract class CourseVideoState {
 
-    protected CourseVideoContext courseVideoContext;
+    protected CourseVideoStateContext courseVideoStateContext;
 
     public abstract void play();
     public abstract void speed();

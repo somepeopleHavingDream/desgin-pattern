@@ -7,7 +7,7 @@ import lombok.Getter;
  * 2020/04/08 21:20
  */
 @Getter
-public class CourseVideoContext {
+public class CourseVideoStateContext {
 
     private CourseVideoState courseVideoState;
 
@@ -18,7 +18,7 @@ public class CourseVideoContext {
 
     public void setCourseVideoState(CourseVideoState courseVideoState) {
         this.courseVideoState = courseVideoState;
-        this.courseVideoState.setCourseVideoContext(this);
+        this.courseVideoState.setCourseVideoStateContext(this);
     }
 
     public void play() {

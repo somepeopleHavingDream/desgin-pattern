@@ -8,7 +8,7 @@ public class StopState extends CourseVideoState {
 
     @Override
     public void play() {
-        super.courseVideoContext.setCourseVideoState(CourseVideoContext.PLAY_STATE);
+        super.courseVideoStateContext.setCourseVideoState(CourseVideoStateContext.PLAY_STATE);
     }
 
     @Override
