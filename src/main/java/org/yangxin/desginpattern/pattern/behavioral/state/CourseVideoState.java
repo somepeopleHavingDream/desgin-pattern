@@ -6,6 +6,7 @@ import lombok.Setter;
  * @author yangxin
  * 2020/04/08 21:15
  */
+@SuppressWarnings("AlibabaAbstractMethodOrInterfaceMethodMustUseJavadoc")
 @Setter
 public abstract class CourseVideoState {
 
