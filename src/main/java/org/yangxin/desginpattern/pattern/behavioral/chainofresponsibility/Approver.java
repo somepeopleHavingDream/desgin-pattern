@@ -4,6 +4,7 @@ package org.yangxin.desginpattern.pattern.behavioral.chainofresponsibility;
  * @author yangxin
  * 2020/03/22 14:53
  */
+@SuppressWarnings("AlibabaAbstractMethodOrInterfaceMethodMustUseJavadoc")
 public abstract class Approver {
 
     protected Approver approver;
