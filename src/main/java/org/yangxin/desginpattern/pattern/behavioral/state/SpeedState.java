@@ -4,7 +4,7 @@ package org.yangxin.desginpattern.pattern.behavioral.state;
  * @author yangxin
  * 2020/04/08 21:27
  */
-public class SpeedState extends CourseVideoState {
+public class SpeedState extends AbstractCourseVideoState {
 
     @Override
     public void play() {

@@ -8,7 +8,7 @@ import lombok.Setter;
  */
 @SuppressWarnings("AlibabaAbstractMethodOrInterfaceMethodMustUseJavadoc")
 @Setter
-public abstract class CourseVideoState {
+public abstract class AbstractCourseVideoState {
 
     protected CourseVideoStateContext courseVideoStateContext;
 
