@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationTargetException;
  * @author yangxin
  * 2020/03/16 20:43
  */
-@SuppressWarnings({"CommentedOutCode", "AlibabaRemoveCommentedCode"})
+@SuppressWarnings({"CommentedOutCode", "AlibabaRemoveCommentedCode", "CallToPrintStackTrace"})
 public class VideoFactory {
 
 //    public Video getVideo(String type) {
@@ -23,7 +23,13 @@ public class VideoFactory {
         AbstractVideo video = null;
         try {
             video = (AbstractVideo) Class.forName(clazz.getName()).getDeclaredConstructor().newInstance();
-        } catch (InstantiationException | IllegalAccessException | ClassNotFoundException | NoSuchMethodException | InvocationTargetException e) {
+        } catch (
+                InstantiationException
+                | IllegalAccessException
+                | ClassNotFoundException
+                | NoSuchMethodException
+                | InvocationTargetException e
+        ) {
             e.printStackTrace();
         }
 
